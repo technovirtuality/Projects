@@ -1,4 +1,3 @@
-#import VANETFunctions.py as fn
 # Importing necessary libraries
 import pandas as pd 
 import numpy as np 
@@ -46,7 +45,7 @@ os.chdir('...\Dataset')
 def save_model(model, filename):
     import pickle
     from os import path
-    pkl_filename = "E:/Anukriti/Avrutti Research/Task 9/Dataset/savedFiles" + "/" + filename + ".pkl"
+    pkl_filename = ".../savedFiles" + "/" + filename + ".pkl"
     if (not path.isfile(pkl_filename)):
   # saving the trained model to disk 
       with open(pkl_filename, 'wb') as file:
@@ -371,42 +370,5 @@ save_model(rs_rf, 'modelPcaRf')
 
 #________________________________________________________________________________________________________
 #-------------------------------------------------END-----------------------------------------------------------
-
-#---------------------------------Logistic Regression: Trial---------------------------------------
-
-from sklearn.linear_model import LogisticRegression
-pipelineLR = make_pipeline(SMOTE(random_state=42), StandardScaler(), LogisticRegression(random_state=1, penalty='l2', solver='lbfgs'))
-
-# Create the parameter grid
-
-param_grid_lr = [{
-    'logisticregression__C': [0.001, 0.01, 0.05, 0.1, 0.5, 1.0, 10.0]
-}]
-
-# Create an instance of GridSearch Cross-validation estimator
-
-gsLR = GridSearchCV(estimator=pipelineLR,
-                     param_grid = param_grid_lr,
-                     scoring='accuracy',
-                     cv=10,
-                     refit=True,
-                     n_jobs=1)
-
-# Train the LogisticRegression Classifier
-gsLR = gsLR.fit(X_train_over_sampled, Y_train_over_sampled)
-
-# Print the training score of the best model
-print(gsLR.best_score_)
-
-# Print the model parameters of the best model
-print(gsLR.best_params_) # {'logisticregression__C': 0.001}
-
-# Print the test score of the best model
-clfLR = gsLR.best_estimator_
-
-
-
-
-
 
 
