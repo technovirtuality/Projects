@@ -28,7 +28,7 @@ from sklearn.metrics import  precision_recall_curve, roc_auc_score, confusion_ma
 
 import os
 
-os.chdir('E:\Anukriti\Advance Data Science-IIT Madras\Final Exam')
+os.chdir('E:Advance Data Science-IIT Madras\Final Exam')
 
 data_xlsx = pd.read_excel('CreditWorthiness.xlsx',sheet_name = 'Data')
 loan = data_xlsx.copy()
