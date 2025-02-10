@@ -39,7 +39,7 @@ from sklearn.metrics import  precision_recall_curve, roc_auc_score, confusion_ma
 
 import os
 
-os.chdir('E:\Anukriti\Avrutti Research\Task 9\Dataset')
+os.chdir('...\Dataset')
 
 data = pd.read_csv('dataset_small.csv')
 df = data.copy()
