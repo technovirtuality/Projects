@@ -40,7 +40,7 @@ from sklearn.metrics import  precision_recall_curve, roc_auc_score, confusion_ma
 
 import os
 
-os.chdir('E:\Anukriti\Avrutti Research\Task 9 Phishing\Dataset')
+os.chdir('...\Dataset')
 
 
 def save_model(model, filename):
