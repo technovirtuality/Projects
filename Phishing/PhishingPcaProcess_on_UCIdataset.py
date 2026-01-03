@@ -45,7 +45,7 @@ from sklearn.metrics import  precision_recall_curve, roc_auc_score, confusion_ma
 
 import os
 
-os.chdir('E:\Anukriti\Avrutti Research\Task 9 Phishing\Dataset')
+os.chdir('...Phishing\Dataset')
 
 
 def save_model(model, filename):
@@ -413,4 +413,5 @@ print(gsLR.best_params_) # {'logisticregression__C': 0.001}
 
 # Print the test score of the best model
 clfLR = gsLR.best_estimator_
+
 
