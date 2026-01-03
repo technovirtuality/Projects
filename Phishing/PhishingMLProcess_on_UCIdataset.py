@@ -39,7 +39,7 @@ from sklearn.metrics import  precision_recall_curve, roc_auc_score, confusion_ma
 
 import os
 
-os.chdir('E:\Anukriti\Avrutti Research\Task 9 Phishing\Dataset')
+os.chdir('...Phishing\Dataset')
 
 data = pd.read_csv('Training Dataset.csv')
 df = data.copy()
@@ -732,5 +732,6 @@ plt.savefig('plots/svm_real_pred_bin.png')
 plt.show()
 
 #________________________________________________________________________________________________
+
 
 
