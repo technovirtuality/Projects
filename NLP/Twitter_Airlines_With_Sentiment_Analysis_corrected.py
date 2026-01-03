@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 
 import os
-os.chdir('E:/Anukriti/Avrutti Research/Task18 Twitter sentiment analysis/Dataset')
+os.chdir('...Twitter sentiment analysis/Dataset')
 
 # Reading the dataset
 #data = pd.read_csv('TwitterDataPrepBigTech2Data.csv', encoding='utf-8') # Read the dataset
@@ -319,6 +319,7 @@ plt.show()
 
 
 #----------------------------------------------------END-----------------------------------------------------------------
+
 
 
 
