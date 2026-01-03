@@ -28,7 +28,7 @@ from sklearn.metrics import  precision_recall_curve, roc_auc_score, confusion_ma
 
 import os
 
-os.chdir('E:Advance Data Science-IIT Madras\Final Exam')
+os.chdir('...\Final Exam')
 
 data_xlsx = pd.read_excel('CreditWorthiness.xlsx',sheet_name = 'Data')
 loan = data_xlsx.copy()
@@ -776,5 +776,6 @@ plt.gca().invert_yaxis()
 """ Understanding percentage plot
 temp_df = loan.groupby(loan["Htype"])["creditScore"].value_counts(normalize=True) # First group by each column according to their unique values then finding value_counts for creditscore within each groupby category
 temp_df = temp_df.mul(100).rename('percent').reset_index() """
+
 
 
