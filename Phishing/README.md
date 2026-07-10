@@ -22,6 +22,11 @@ Design:
 
 The procedure for phishing detection system is performed in two ways as explained below: 
 Procedure I: The important features are selected from XG Boost model and selected features are used for building model for binary classification.
+
+<img width="1037" height="675" alt="image" src="https://github.com/user-attachments/assets/979097db-b3e4-43ae-8cce-5e4bf0bb1804" />
+
+
+
 Procedure II: Feature selection using principal component analysis approach
 The difference between the two procedures is that feature extraction in procedure 1, is performed by the machine learning methods i.e., Random forest and XG Boost whereas in procedure 2, the features are extracted by converting the feature space into the direction of maximum variance and then principal components are selected by applying PCA approach. 
 
